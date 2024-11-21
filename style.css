@@ -1,0 +1,102 @@
+/* Mengatur gaya dasar untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Mengatur container form */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Judul form */
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Label input */
+label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input teks dan password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Tombol login */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol login */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+    }
+    
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
+.btn-hapus {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-hapus:hover {
+    background-color: darkred; /* Warna saat tombol dihover */
+}
